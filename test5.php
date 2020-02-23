@@ -10,7 +10,7 @@ class sel{
     $selected->execute();
 
     while($row = $selected->fetch(PDO::FETCH_ASSOC)){
-        echo $row['$id'];
+        echo $row[$id];
     }
     }
 }
